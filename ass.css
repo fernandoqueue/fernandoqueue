@@ -1,5 +1,5 @@
-#bodies{
-text-align: center;
-width: 100%;
+div.bodies div:not(:nth-child(1)){
+ display:none;
+
 }
 
