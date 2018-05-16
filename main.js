@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function changetext(x){
 	switch(x){
 	case 1:	
@@ -29,14 +28,3 @@ function changetext(x){
 
 }
 }
-=======
-function changetext(){
-	var x = document.getElementById("bodies");
-	if(x.innerHTML==="Hello World"){
-	x.innerHTML="Good Bye World";
-	}
-	else{
-	x.innerHTML ="Hello World";
-	}		
-}
->>>>>>> c0f79fa8862ef01c81403941a9b434b5dbc25f43
