@@ -1,6 +1,6 @@
 function changetext(){
 	var x = document.getElementById("bodies");
-	if(x.innerHTML==="dd"){
+	if(x.innerHTML==="Hello World"){
 	x.innerHTML="Good Bye World;
 	}
 	else{
