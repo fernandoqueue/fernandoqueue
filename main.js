@@ -14,11 +14,11 @@ var returned = "";
 })();
 var x = function(v){
 	var tab;
-	var tablebeg = "<table><thead><tr><td>Name</td></tr></thead><tbody>";
+	var tablebeg = "<table><thead><tr><td><h2>Name</h2></td></tr></thead><tbody>";
 	var tableend = "</tbody></table>"
 	var tabledata ="";				
 	v.forEach(function(x){
-	tabledata += "<tr><td><h2>"+x.Name+"</h2></td></tr>";
+	tabledata += "<tr><td>"+x.Name+"</td></tr>";
 	})
 	tab = tablebeg + tabledata + tableend;
 	//document.getElementById("bodies1").innerHTML =tab; 
