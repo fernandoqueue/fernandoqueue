@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function getURL(){
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', "https://www.reddit.com/r/learnprogramming.json",true);
@@ -15,6 +16,8 @@ var x = function(v){
 	v.data;
 }
 
+=======
+>>>>>>> 0ae4feba6d657cf76cd535d99845050461d1c705
 function changetext(x){
 	switch(x){
 	case 1:	
@@ -45,5 +48,8 @@ function changetext(x){
 
 }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 0ae4feba6d657cf76cd535d99845050461d1c705
