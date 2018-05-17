@@ -28,7 +28,7 @@ function changetext(x){
 	
 	switch(x){
 	case 1:	
-	if(document.getElementById("bodies1").innerHTML === "Hello World!" && document.getElementById("bodies1").style.display==="block")
+	if(document.getElementById("bodies1").innerHTML === "Hello World!")
 	{
 	document.getElementById("bodies1").innerHTML = returned;
 	}
