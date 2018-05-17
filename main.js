@@ -1,18 +1,18 @@
 
-
-function getURL(){
+var foo=(function bar(){
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', "events.txt",true);
 	xhr.send();
 	xhr.onreadystatechange = processRequest;
-	
+	var returned;
 	function processRequest(e) {
  		if (xhr.readyState == 4 && xhr.status == 200) {
         		var response = JSON.parse(xhr.responseText);
-			x(response)
+			returned = x(response)
 		 }
    	 }
-}
+	return bar;
+})();
 var x = function(v){
 	var tab;
 	var tablebeg = "<table><theader><tr><td>Name</td></tr></theader><tbody>";
@@ -22,14 +22,22 @@ var x = function(v){
 	tabledata += "<tr><td>"+x.Name+"</td></tr>";
 	})
 	tab = tablebeg + tabledata + tableend;
-	changetext(1);
 	document.getElementById("bodies1").innerHTML =tab; 
+	return tab;
 };
 
 
 function changetext(x){
+	
 	switch(x){
 	case 1:	
+	if(document.getElementById("bodies1").innerHTML === "Hello World!" && document.getElementById("bodies1").style.display==="block")
+	{
+	document.getElementById("bodies1").innerHTML = foo();
+	}
+	else{
+	document.getElementById("bodies1").innerHTML="Hello World!";
+	}
 	document.getElementById("bodies1").style.display = "block";
 	document.getElementById("bodies2").style.display = "none";
 	document.getElementById("bodies3").style.display = "none";
