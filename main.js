@@ -1,7 +1,7 @@
 
 function getURL(){
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', "https://www.reddit.com/r/learnprogramming.json",true);
+	xhr.open('GET', "index.html",true);
 	xhr.send();
 	xhr.onreadystatechange = processRequest;
 	
