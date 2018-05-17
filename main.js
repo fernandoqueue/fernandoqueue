@@ -1,7 +1,8 @@
 
+
 function getURL(){
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', "index.html",true);
+	xhr.open('GET', "events.txt",true);
 	xhr.send();
 	xhr.onreadystatechange = processRequest;
 	
@@ -13,8 +14,18 @@ function getURL(){
    	 }
 }
 var x = function(v){
-	v.data;
-}
+	var tab;
+	var tablebeg = "<table><theader><tr><td>Name</td></tr></theader><tbody>";
+	var tableend = "</tbody></table>"
+	var tabledata ="";				
+	v.forEach(function(x){
+	tabledata += "<tr><td>"+x.Name+"</td></tr>";
+	})
+	tab = tablebeg + tabledata + tableend;
+	changetext(1);
+	document.getElementById("bodies1").innerHTML =tab; 
+};
+
 
 function changetext(x){
 	switch(x){
