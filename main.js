@@ -18,7 +18,7 @@ var x = function(v){
 	var tableend = "</tbody></table>"
 	var tabledata ="";				
 	v.forEach(function(x){
-	tabledata += "<tr><td>"+x.Name+"</td></tr>";
+	tabledata += "<tr><td><h2>"+x.Name+"</h2></td></tr>";
 	})
 	tab = tablebeg + tabledata + tableend;
 	//document.getElementById("bodies1").innerHTML =tab; 
