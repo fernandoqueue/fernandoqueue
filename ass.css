@@ -1,5 +1,0 @@
-div.bodies div:not(:nth-child(1)){
- display:none;
-
-}
-
