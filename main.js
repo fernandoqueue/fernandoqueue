@@ -21,7 +21,7 @@ var x = function(v){
 	tabledata += "<tr><td>"+x.Name+"</td></tr>";
 	})
 	tab = tablebeg + tabledata + tableend;
-	document.getElementById("bodies1").innerHTML =tab; 
+	//document.getElementById("bodies1").innerHTML =tab; 
 	return tab;
 };
 function changetext(x){
