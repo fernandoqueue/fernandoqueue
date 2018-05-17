@@ -1,4 +1,20 @@
-<<<<<<< HEAD
+function getURL(){
+	var xhr = new XMLHttpRequest();
+	xhr.open('GET', "https://www.reddit.com/r/learnprogramming.json",true);
+	xhr.send();
+	xhr.onreadystatechange = processRequest;
+	
+	function processRequest(e) {
+ 		if (xhr.readyState == 4 && xhr.status == 200) {
+        		var response = JSON.parse(xhr.responseText);
+			x(response)
+		 }
+   	 }
+}
+var x = function(v){
+	v.data;
+}
+
 function changetext(x){
 	switch(x){
 	case 1:	
@@ -29,14 +45,5 @@ function changetext(x){
 
 }
 }
-=======
-function changetext(){
-	var x = document.getElementById("bodies");
-	if(x.innerHTML==="Hello World"){
-	x.innerHTML="Good Bye World";
-	}
-	else{
-	x.innerHTML ="Hello World";
-	}		
-}
->>>>>>> c0f79fa8862ef01c81403941a9b434b5dbc25f43
+
+
