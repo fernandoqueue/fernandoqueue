@@ -14,7 +14,7 @@ var returned = "";
 })();
 var x = function(v){
 	var tab;
-	var tablebeg = "<table><theader><tr><td>Name</td></tr></theader><tbody>";
+	var tablebeg = "<table><thead><tr><td>Name</td></tr></thead><tbody>";
 	var tableend = "</tbody></table>"
 	var tabledata ="";				
 	v.forEach(function(x){
