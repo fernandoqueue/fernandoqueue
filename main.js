@@ -1,17 +1,16 @@
-
-var foo=(function bar(){
+var returned = "";
+(function bar(){
 	var xhr = new XMLHttpRequest();
 	xhr.open('GET', "events.txt",true);
 	xhr.send();
 	xhr.onreadystatechange = processRequest;
-	var returned;
 	function processRequest(e) {
  		if (xhr.readyState == 4 && xhr.status == 200) {
         		var response = JSON.parse(xhr.responseText);
 			returned = x(response)
 		 }
    	 }
-	return bar;
+	return returned;
 })();
 var x = function(v){
 	var tab;
@@ -25,15 +24,13 @@ var x = function(v){
 	document.getElementById("bodies1").innerHTML =tab; 
 	return tab;
 };
-
-
 function changetext(x){
 	
 	switch(x){
 	case 1:	
 	if(document.getElementById("bodies1").innerHTML === "Hello World!" && document.getElementById("bodies1").style.display==="block")
 	{
-	document.getElementById("bodies1").innerHTML = foo();
+	document.getElementById("bodies1").innerHTML = returned;
 	}
 	else{
 	document.getElementById("bodies1").innerHTML="Hello World!";
